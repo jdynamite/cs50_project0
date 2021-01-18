@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="https://kit.fontawesome.com/dde8c4ef4e.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -10,23 +13,17 @@
     </head>
     <body class="bg-white">
         <div class="container h-100">
-            <div class="d-flex justify-content-end" id="dropdown">
-                <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a class="dropdown-item" href="index.html">Text search</a></li>
-                        <li><a class="dropdown-item" href="images.html">Image search</a></li>
-                        <li><a class="dropdown-item" href="advanced.html">Advanced search</a></li>
-                    </ul>
+            <div class="d-flex justify-content-end text-end">
+                <div class="mt-2">
+                    <a href="images.html">Images</a>
+                    <a class="ms-3" href="advanced.html">Advanced</a>
                 </div>
             </div>
             <div class="h-75 row justify-content-center align-items-center">
                 <div class="col-lg-5 col-sm-6">
-                    <form action="https://google.com/search">
+                    <form action="https://google.com/search" method="GET">
                         <div class="input-group mb-3">
-                            <input class="form-control rounded-pill" type="text" placeholder="Some deep inquiry about the universe..." name="q">
+                            <input class="form-control rounded-pill" type="text" placeholder="Some deep inquiry about the universe..." name="q" required>
                         </div>
                         <div id="actions">
                             <button type="submit" name="" class="btn btn-light" id="search">Search</button>

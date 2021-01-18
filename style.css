@@ -22,3 +22,16 @@ input[type='submit'] {
 #dropdown {
     margin-top: 1%;
 }
+
+a, a:hover, a:active{
+    color:#3c4043;
+}
+
+#advancedTitle {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.advForm {
+    font-size: 12px;
+}
